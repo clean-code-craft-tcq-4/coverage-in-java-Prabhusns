@@ -9,7 +9,7 @@ public class TypewiseAlertTest {
 	@Test
 	public void infersBreachAsPerLimits() {
 		assertTrue(TypewiseAlert.inferBreach(new RangeInputPOJO(12, 20, 30)) == BreachType.TOO_LOW);
-		assertTrue(TypewiseAlert.inferBreach(new RangeInputPOJO(22, 26, 30)) == BreachType.NORMAL);
+		assertTrue(TypewiseAlert.inferBreach(new RangeInputPOJO(22, 20, 30)) == BreachType.NORMAL);
 		assertTrue(TypewiseAlert.inferBreach(new RangeInputPOJO(32, 23, 30)) == BreachType.TOO_HIGH);
 	}
 
